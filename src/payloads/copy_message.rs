@@ -15,7 +15,7 @@ impl_payload! {
     ///
     /// [`MessageId`]: crate::types::MessageId
     #[derive(Debug, PartialEq, Eq, Hash, Clone, Serialize)]
-    pub CopyMessage (CopyMessageSetters) => Message {
+    pub CopyMessage (CopyMessageSetters) => MessageId {
         required {
             /// Unique identifier for the target chat or username of the target channel (in the format `@channelusername`)
             pub chat_id: ChatId [into],
