@@ -8,7 +8,7 @@
 // [`schema`]: https://github.com/WaffleLapkin/tg-methods-schema
 use serde::Serialize;
 
-use crate::types::{ChatId, Message, MessageEntity, ParseMode, ReplyMarkup};
+use crate::types::{ChatId, MessageEntity, ParseMode, ReplyMarkup, MessageId};
 
 impl_payload! {
     /// Use this method to copy messages of any kind. The method is analogous to the method forwardMessage, but the copied message doesn't have a link to the original message. Returns the [`MessageId`] of the sent message on success.
